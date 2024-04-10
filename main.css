@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #21b50d;
+  font-family: 'Popins',sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.game-title {
+  text-align: center;
+  margin: 20px;
+  font-weight: 800;
+  color: #fff;
+  animation: moveText 1.8s infinite alternate;
+}
+
+
+@keyframes moveText {
+  from {
+    transform: translateX(0); /* Начальное положение текста */
+  }
+  to {
+    transform: translateX(30px); /* Конечное положение текста */
+  }
+}
+
+.game-block {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали по центру */
+  align-items: center; /* Выравнивание по вертикали по центру */
+}
+
+
+
+
+button {
+  border: none ;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius:10px ;
+  background: #28e90e;
+}
